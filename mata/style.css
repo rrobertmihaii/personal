@@ -1,0 +1,152 @@
+:root{
+    --main-bg: url(img/bckg.jpg);
+    --main: rgb(247, 91, 0);
+    --text: white;
+    --primary: green;
+    --secondary: red;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img/bckg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    backdrop-filter: blur(1px);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    position: relative;
+}
+
+.proiecte {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.proiect {
+    width: calc(33.33% - 10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border:none ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.proiect h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.proiect span{
+    color: var(--primary);
+}
+
+.proiect p {
+    margin: 5px 0;
+    color: #555;
+}
+h4 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 5px 0;
+    color: #555;
+}
+
+.proiect:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 100px 5px hsla(0,0%,100%,.075);
+    transform: translateY(-4px);
+    transition: all 350ms;
+    border: none;
+
+}
+a{
+    text-align: center;
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(0, 0, 0, 0.751);
+    text-decoration: none;
+    text-align: center;
+}
+.proiecte1 {
+   
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.proiect1 {
+    width: calc(33.33% - 10px);
+    
+    border:none ;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.proiect1 h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.proiect1 span{
+    color: var(--primary);
+}
+
+.proiect1 p {
+    font-size: 25px;
+    margin: 5px 0;
+    color: #1e1e1e;
+}
+
+.proiect1:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 100px 5px hsla(0,0%,100%,.075);
+    transform: translateY(-4px);
+    transition: all 350ms;
+    border: none;
+
+}
+.proiecte1 img{
+    max-width: 100%;
+}
+.proiecte1 button{
+    background-color: var(--main-bg);
+    padding: 10px;
+    border-radius: 10px;
+    width: 130px;
+}
+.proiecte1 button:hover{
+    background-color: var(--main);
+    padding: 15px;
+    border-radius: 30px;
+    width: 130px;
+    transition: all .5s;
+}
+::selection{
+    color: var(--main);
+}
